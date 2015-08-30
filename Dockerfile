@@ -1,3 +1,2 @@
-FROM python:2-onbuild
-EXPOSE 5000
-CMD [ "python", "auth.py" ]
+FROM grahamdumpleton/mod-wsgi-docker:python-2.7-onbuild
+CMD [ "wsgi.py" ]
